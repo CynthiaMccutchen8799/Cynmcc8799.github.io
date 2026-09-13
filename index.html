@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -5,7 +6,8 @@
     <!--
         Author: Cynthia Mccutchen
         Date: September 13, 2026
-        Purpose: This webpage creates a simple personal portfolio homepage.
+        Purpose: This webpage creates a personal portfolio homepage.
+        
     -->
 
     <meta charset="utf-8">
@@ -13,94 +15,16 @@
 
     <title>Cynthia Mccutchen - MyPortfolio</title>
 
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-            color: #333;
-        }
-
-        header {
-            background-color: #333;
-            color: white;
-            padding: 20px;
-            text-align: center;
-        }
-
-        nav {
-            background-color: #555;
-            padding: 10px;
-            text-align: center;
-        }
-
-        nav a {
-            color: white;
-            text-decoration: none;
-            margin: 0 15px;
-        }
-
-        nav a:hover {
-            text-decoration: underline;
-        }
-
-        main {
-            width: 80%;
-            margin: 20px auto;
-        }
-
-        section {
-            background-color: white;
-            padding: 20px;
-            margin-bottom: 20px;
-            border-radius: 8px;
-        }
-
-        .projects {
-            display: flex;
-            gap: 20px;
-            flex-wrap: wrap;
-        }
-
-        .project {
-            flex: 1;
-            min-width: 200px;
-            padding: 15px;
-            border: 1px solid #ccc;
-        }
-
-        .project img {
-            width: 100%;
-            height: 150px;
-            object-fit: cover;
-        }
-
-        form {
-            display: flex;
-            flex-direction: column;
-            gap: 10px;
-        }
-
-        input,
-        textarea {
-            padding: 10px;
-            font-size: 16px;
-        }
-
-        button {
-            padding: 10px;
-            font-size: 16px;
-            cursor: pointer;
-        }
-    </style>
+    <!-- Link to the external CSS file -->
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
 
     <header>
-        <!-- JavaScript will change this message to include the visitor's name. -->
+        <!-- JavaScript will update this heading with the visitor's name. -->
         <h1 id="welcomeMessage">Hey! Welcome to My Portfolio!</h1>
+
         <p>Cynthia Mccutchen</p>
     </header>
 
@@ -123,12 +47,13 @@
             </p>
 
             <p>
-                I am currently developing my skills.
+                I am developing my skills in HTML, CSS, JavaScript, Java,
+                databases, and other areas of computer programming.
             </p>
 
             <p>
                 This portfolio shows some of the projects and skills that I
-                have developed.
+                have developed during my coursework.
             </p>
         </section>
 
@@ -141,20 +66,22 @@
                 <!-- Project 1 -->
                 <div class="project">
                     <a href="https://github.com/Cynmcc8799.github.io/project1" target="_blank">
-                        <img src="https://via.placeholder.com/300x150" alt="Project 1">
+                        <img src="https://via.placeholder.com/300x150"
+                             alt="Project 1">
                     </a>
 
                     <h3>Project 1</h3>
 
                     <p>
-                        A previous programming project completed during my coursework.
+                        A programming project completed during my coursework.
                     </p>
                 </div>
 
                 <!-- Project 2 -->
                 <div class="project">
                     <a href="https://github.com/Cynmcc8799.github.io/project2" target="_blank">
-                        <img src="https://via.placeholder.com/300x150" alt="Project 2">
+                        <img src="https://via.placeholder.com/300x150"
+                             alt="Project 2">
                     </a>
 
                     <h3>Project 2</h3>
@@ -167,13 +94,14 @@
                 <!-- Project 3 -->
                 <div class="project">
                     <a href="https://github.com/Cynmcc8799.github.io/project3" target="_blank">
-                        <img src="https://via.placeholder.com/300x150" alt="Project 3">
+                        <img src="https://via.placeholder.com/300x150"
+                             alt="Project 3">
                     </a>
 
                     <h3>Project 3</h3>
 
                     <p>
-                        Another project demonstrating skills learned through coursework.
+                        A project demonstrating skills learned through coursework.
                     </p>
                 </div>
 
@@ -187,20 +115,32 @@
             <form action="#" method="post">
 
                 <label for="senderName">Name:</label>
-                <input type="text" id="senderName" name="senderName"
-                       placeholder="Enter your name" required>
+                <input type="text"
+                       id="senderName"
+                       name="senderName"
+                       placeholder="Enter your name"
+                       required>
 
                 <label for="email">Email Address:</label>
-                <input type="email" id="email" name="email"
-                       placeholder="Enter your email address" required>
+                <input type="email"
+                       id="email"
+                       name="email"
+                       placeholder="Enter your email address"
+                       required>
 
                 <label for="subject">Subject:</label>
-                <input type="text" id="subject" name="subject"
-                       placeholder="Enter the subject" required>
+                <input type="text"
+                       id="subject"
+                       name="subject"
+                       placeholder="Enter the subject"
+                       required>
 
                 <label for="message">Message:</label>
-                <textarea id="message" name="message" rows="6"
-                          placeholder="Enter your message" required></textarea>
+                <textarea id="message"
+                          name="message"
+                          rows="6"
+                          placeholder="Enter your message"
+                          required></textarea>
 
                 <button type="submit">Send Message</button>
 
@@ -209,25 +149,9 @@
 
     </main>
 
-    <script>
-        /*
-            JavaScript User Interaction
-
-            The prompt() function asks the visitor for their name.
-            The name is stored in the visitorName variable.
-            The welcome message at the top of the page is then
-            updated to welcome the visitor by name.
-        */
-
-        let visitorName = prompt("please put your name down here");
-
-        if (visitorName !== null && visitorName.trim() !== "") {
-            document.getElementById("welcomeMessage").textContent =
-                "Hey! welcome to My Portfolio, " + visitorName + "!";
-        }
-    </script>
+    <!-- Link to the external JavaScript file -->
+    <script src="script.js"></script>
 
 </body>
 
 </html>
-```
