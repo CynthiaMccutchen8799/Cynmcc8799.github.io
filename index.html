@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--
+        Author: Cynthia Mccutchen
+        Date: September 13, 2026
+        Purpose: This webpage creates a simple personal portfolio homepage.
+    -->
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Cynthia Mccutchen - MyPortfolio</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #555;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            width: 80%;
+            margin: 20px auto;
+        }
+
+        section {
+            background-color: white;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+        }
+
+        .projects {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .project {
+            flex: 1;
+            min-width: 200px;
+            padding: 15px;
+            border: 1px solid #ccc;
+        }
+
+        .project img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        input,
+        textarea {
+            padding: 10px;
+            font-size: 16px;
+        }
+
+        button {
+            padding: 10px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <!-- JavaScript will change this message to include the visitor's name. -->
+        <h1 id="welcomeMessage">Hey! Welcome to My Portfolio!</h1>
+        <p>Cynthia Mccutchen</p>
+    </header>
+
+    <!-- Navigation menu -->
+    <nav>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <main>
+
+        <!-- About Section -->
+        <section id="about">
+            <h2>About Me</h2>
+
+            <p>
+                Hey! My name is Cynthia Mccutchen. I am a student interested
+                in learning programming, web development, and computer technology.
+            </p>
+
+            <p>
+                I am currently developing my skills.
+            </p>
+
+            <p>
+                This portfolio shows some of the projects and skills that I
+                have developed.
+            </p>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects">
+            <h2>My Projects</h2>
+
+            <div class="projects">
+
+                <!-- Project 1 -->
+                <div class="project">
+                    <a href="https://github.com/Cynmcc8799.github.io/project1" target="_blank">
+                        <img src="https://via.placeholder.com/300x150" alt="Project 1">
+                    </a>
+
+                    <h3>Project 1</h3>
+
+                    <p>
+                        A previous programming project completed during my coursework.
+                    </p>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project">
+                    <a href="https://github.com/Cynmcc8799.github.io/project2" target="_blank">
+                        <img src="https://via.placeholder.com/300x150" alt="Project 2">
+                    </a>
+
+                    <h3>Project 2</h3>
+
+                    <p>
+                        A project demonstrating programming and problem-solving skills.
+                    </p>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project">
+                    <a href="https://github.com/Cynmcc8799.github.io/project3" target="_blank">
+                        <img src="https://via.placeholder.com/300x150" alt="Project 3">
+                    </a>
+
+                    <h3>Project 3</h3>
+
+                    <p>
+                        Another project demonstrating skills learned through coursework.
+                    </p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact">
+            <h2>Contact Me</h2>
+
+            <form action="#" method="post">
+
+                <label for="senderName">Name:</label>
+                <input type="text" id="senderName" name="senderName"
+                       placeholder="Enter your name" required>
+
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email"
+                       placeholder="Enter your email address" required>
+
+                <label for="subject">Subject:</label>
+                <input type="text" id="subject" name="subject"
+                       placeholder="Enter the subject" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="6"
+                          placeholder="Enter your message" required></textarea>
+
+                <button type="submit">Send Message</button>
+
+            </form>
+        </section>
+
+    </main>
+
+    <script>
+        /*
+            JavaScript User Interaction
+
+            The prompt() function asks the visitor for their name.
+            The name is stored in the visitorName variable.
+            The welcome message at the top of the page is then
+            updated to welcome the visitor by name.
+        */
+
+        let visitorName = prompt("please put your name down here");
+
+        if (visitorName !== null && visitorName.trim() !== "") {
+            document.getElementById("welcomeMessage").textContent =
+                "Hey! welcome to My Portfolio, " + visitorName + "!";
+        }
+    </script>
+
+</body>
+
+</html>
+```
