@@ -1,0 +1,91 @@
+/* 
+    Author: Cynthia Mccutchen
+    Date: September 13, 2026
+    Purpose: This stylesheet controls the appearance.
+*/
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header styling */
+header {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Navigation styling */
+nav {
+    background-color: #555;
+    padding: 10px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Main content styling */
+main {
+    width: 80%;
+    margin: 20px auto;
+}
+
+/* Section styling */
+section {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+/* Project layout */
+.projects {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.project {
+    flex: 1;
+    min-width: 200px;
+    padding: 15px;
+    border: 1px solid #ccc;
+}
+
+.project img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+/* Contact form styling */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input,
+textarea {
+    padding: 10px;
+    font-size: 16px;
+}
+
+button {
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
